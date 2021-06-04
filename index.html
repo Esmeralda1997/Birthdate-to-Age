@@ -2,18 +2,19 @@
 <header>
     <link rel="stylesheet" href="style.css"></link>
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
 <script src="index.js"></script>
     <title>Birthday to Age</title>
 </header>
 <body>
-    <p class="prompt">When is you birthday?</p>
+    <p id="prompt">When is you birthday?</p>
+    <p id="output"></p>
     <input id="bday" type="date" value="2018-07-22" autofocus="autofocus"/>
     <button id="myBtn" onclick="myFunction()">Submit</button>
-    <p id="output"></p>
 
     <div id="cake-svg">
         <div class="velas">
@@ -172,5 +173,6 @@
             <rect x="10" y="475.571" fill="#fefae9" width="180" height="4" />
         </svg>
     </div>
+    <button id="reset" onClick="myResetFunction()">Reset</button>
 </body>
 </html>

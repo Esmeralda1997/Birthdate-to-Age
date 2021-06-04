@@ -1,16 +1,17 @@
 body, html{
-    background-color: pink;
+    background: pink;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
     flex-direction: column;
+    overflow: hidden;
 }
 
-.prompt {
+#prompt {
     font-size: xx-large;
-    font-family: 'Mate SC', serif;
+    font-family: 'Bebas Neue', cursive;
     color: white;
 }
 
@@ -24,25 +25,44 @@ body, html{
     
 }
 
-#submit {
+#myBtn {
     margin-top: 20px;
     height: 30px;
     width: 100px;
     background-color: white;
-    border-radius: 50px;
+    border-radius: 100px;
     color: pink;
+    font-family:'Bebas Neue', cursive;;
 }
 
 #output {
+    top: 350px;
+    position: absolute;
+    font-size: xx-large;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 1000;
     color: white;
-    font-size: large;
-    font-family: 'Lato', sans-serif;
+    
+}
+
+#reset {
+  font-family: 'Bebas Neue', cursive;
+  position: absolute;
+  top: 425px;
+  visibility: hidden;
+  margin-top: 20px;
+  height: 30px;
+  width: 100px;
+  background-color: white;
+  border-radius: 100px;
+  color: pink;
+  z-index: 10;
 }
 
 #cake-svg{
     visibility: hidden;
     position: absolute;
-    top: 400px;
+    top: 300px;
 }
 
 
