@@ -5,13 +5,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="index.js"></script>
     <title>Birthday to Age</title>
 </header>
 <body>
     <p class="prompt">When is you birthday?</p>
-    <input type="date" id="b-day" value=new Date() autofocus="autofocus"/>
-    <button id="submit" onClick="myFunction()">Submit</button>
+    <input id="bday" type="date" value="2018-07-22" autofocus="autofocus"/>
+    <button id="myBtn" onclick="myFunction()">Submit</button>
     <p id="output"></p>
 
     <div id="cake-svg">
